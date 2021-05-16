@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <% datalis.forEach(character =>{ %>
+                <p>
+                    <%=character.quote%>
+                </p>
+<h3>
+    <%=character.character%>
+</h3>
+<img src="<%=character.image%>" alt="">
+<form action="/favorite-quotes/<%=character.id%>?_method=update" method="POST">
+    <input type="text" name="qoute" value="<%=character.quote%>" >
+    <input type="submit" value="update">
+
+</form>
+<form action="/favorite-quotes/<%=character.id%>?_method=delete" method="POST">
+    <input type="submit" value="delete">
+
+</form>
+            <%})%>
+   
+
+    </main>
+</body>
+</html>
