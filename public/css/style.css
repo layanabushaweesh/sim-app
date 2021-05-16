@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    background-color: #62C8E4;
+    font-family: sans-serif;
+    color: #fefb1e;
+}
+
+nav{
+    background-color:#16a085 ;
+    color: #fefb1e;
+    
+}
+form{
+    background-color: #16a085;
+}
+nav img {
+    height: 50px;
+    float: left;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    margin: 0
+}
+
+ul li {
+    margin-left: 20px;
+}
